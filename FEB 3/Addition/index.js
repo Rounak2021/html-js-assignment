@@ -12,14 +12,14 @@ console.log("The addition of the numbers are: " + add(3,2,-9));
 
 
 // Argument 2
-function add_num1(x, y) {
+function add_num(x, y) {
     return x+y;
 }
 
-// Argument 2
+// Argument 3
 function add_num(x, y, z) {
     return x+y+z;
 }
-console.log("The addition of the numbers are: " + add_num1(5, 6));      
+console.log("The addition of the numbers are: " + add_num(5, 6));      
 console.log("The addition of the numbers are: " + add_num(2, 4,6));   
   
