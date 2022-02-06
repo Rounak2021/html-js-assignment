@@ -1,11 +1,11 @@
 let photo_album=document.getElementById("photo-album")
-const API_KEY = "Empw2mA9hLTL3Ks6DdPjG-HA6n4NTKdqrnsGUBo2tEs";
+const my_KEY = "Empw2mA9hLTL3Ks6DdPjG-HA6n4NTKdqrnsGUBo2tEs";
 
-const API_SECRET = "CZqD7mrJPjpUphCldFgk0pe19PqCH1RE2qeY9cHJQWU";
+const my_SECRET = "CZqD7mrJPjpUphCldFgk0pe19PqCH1RE2qeY9cHJQWU";
 let input = document.getElementsByTagName("input")[0];
 input.addEventListener("input", ()=>{
 photo_album.innerHTML = "";
-    fetch(`https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${input.value}&per_page=25`)
+    fetch(`https://api.unsplash.com/search/photos/?client_id=${my_KEY}&query=${input.value}&per_page=20`)
     .then(function(res) {
         return res.json();
     })
